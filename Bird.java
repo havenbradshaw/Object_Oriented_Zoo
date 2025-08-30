@@ -1,6 +1,15 @@
 public class Bird extends Animal implements Flyable {
+    public Bird(String name) {
+        super(name);
+    }
+
     @Override
     public void makeSound() {
-        System.out.println("Chirp");
+        System.out.println("Chirp!");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println(getName() + " flies with its wings.");
     }
 }

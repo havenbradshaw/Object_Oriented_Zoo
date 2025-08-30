@@ -1,11 +1,26 @@
+import java.util.ArrayList;
+
 public class Tester {
     public static void main(String[] args) {
-        Animal myMammal = new Mammal();
-        Animal myBird = new Bird();
-        Animal myReptile = new Reptile();
+        ArrayList<Animal> animals = new ArrayList<>();
 
-        myMammal.makeSound(); // Outputs: Hi!
-        myBird.makeSound();   // Outputs: Chirp
-        myReptile.makeSound(); // Outputs: Hiss
+        animals.add(new Mammal("Dog"));
+        animals.add(new Bird("Conure"));
+        animals.add(new Reptile("Python"));
+
+        for (Animal animal : animals) {
+            System.out.println("Animal: " + animal.getName());
+
+            if (animal instanceof Walkable walkableAnimal) {
+                walkableAnimal.walk();
+            }
+
+            if (animal instanceof Flyable flyableAnimal) {
+                flyableAnimal.fly();
+            }   
+
+            System.out.println();
+
+            }
     }
 }
