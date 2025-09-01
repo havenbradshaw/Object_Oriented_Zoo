@@ -11,13 +11,19 @@ public class Tester {
         for (Animal animal : animals) {
             System.out.println("Animal: " + animal.getName());
 
+            animal.makeSound();
+
+            if (animal instanceof Flyable flyableAnimal) {
+            flyableAnimal.fly();
+            }   
+
             if (animal instanceof Walkable walkableAnimal) {
                 walkableAnimal.walk();
             }
 
-            if (animal instanceof Flyable flyableAnimal) {
-                flyableAnimal.fly();
-            }   
+            if (animal instanceof Sunbathes sunbathingAnimal) {
+                sunbathingAnimal.sunbathe();    
+            }
 
             System.out.println();
 

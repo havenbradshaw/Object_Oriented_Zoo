@@ -1,11 +1,11 @@
-public class Reptile extends Animal implements Walkable {
+public class Reptile extends Animal implements Walkable, Sunbathes{
     public Reptile(String name) {
         super(name);
     }
 
     @Override
     public void makeSound() {
-        System.out.println("Hiss");
+        System.out.println("Hiss!");
     }
 
     @Override

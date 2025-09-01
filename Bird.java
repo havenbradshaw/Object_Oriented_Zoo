@@ -1,4 +1,4 @@
-public class Bird extends Animal implements Flyable {
+public class Bird extends Animal implements Flyable, Walkable {
     public Bird(String name) {
         super(name);
     }
