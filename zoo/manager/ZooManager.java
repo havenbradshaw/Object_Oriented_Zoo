@@ -1,5 +1,10 @@
+package zoo.manager;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import zoo.animals.Animal;
+import zoo.interfaces.Flyable;
+import zoo.interfaces.Walkable;
 
 /**
  * Manages a collection of animals in the zoo and provides a menu for user interaction.
@@ -37,12 +42,14 @@ public class ZooManager {
                     
                 case "3" -> allNoise();
                     
-                case "4" -> System.out.println("Goodbye!");
-
+                case "4" -> {
+                    System.out.println("Goodbye!");
+                    return;
+                }
                 default -> System.out.println("Invalid choice.");
-                    
             }
         }
+           
     }
 
     //list all method

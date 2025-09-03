@@ -1,3 +1,5 @@
+package zoo.animals;
+
 public abstract class Animal {
      private final String name;
 

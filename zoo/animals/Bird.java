@@ -1,3 +1,6 @@
+package zoo.animals;
+import zoo.interfaces.Flyable;
+
 public class Bird extends Animal implements Flyable {
     public Bird(String name) {
         super(name);

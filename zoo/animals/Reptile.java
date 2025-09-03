@@ -1,3 +1,6 @@
+package zoo.animals;
+import zoo.interfaces.Walkable;
+
 public class Reptile extends Animal implements Walkable {
     public Reptile(String name) {
         super(name);

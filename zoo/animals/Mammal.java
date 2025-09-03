@@ -1,3 +1,6 @@
+package zoo.animals;
+import zoo.interfaces.Walkable;
+
 public class Mammal extends Animal implements Walkable {
 
     public Mammal(String name) {

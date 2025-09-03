@@ -1,5 +1,11 @@
+package zoo.manager;
 
 import java.util.ArrayList;
+
+import zoo.animals.Animal;
+import zoo.animals.Bird;
+import zoo.animals.Mammal;
+import zoo.animals.Reptile;
 
 public class Main {
     public static void main(String[] args) {
