@@ -1,3 +1,8 @@
+package animals;
+
+import interfaces.Flyable;
+import interfaces.Walkable;
+
 public class Bird extends Animal implements Flyable, Walkable {
     public Bird(String name) {
         super(name);

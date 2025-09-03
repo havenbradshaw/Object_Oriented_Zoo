@@ -1,6 +1,15 @@
+package main;
+
+import animals.Animal;
+import animals.Bird;
+import animals.Mammal;
+import animals.Reptile;
+import interfaces.Flyable;
+import interfaces.Sunbathes;
+import interfaces.Walkable;
 import java.util.ArrayList;
 
-public class Tester {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Animal> animals = new ArrayList<>();
 

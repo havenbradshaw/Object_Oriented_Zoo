@@ -1,3 +1,7 @@
+package animals;
+
+import interfaces.Walkable;
+
 public class Mammal extends Animal implements Walkable {
 
     public Mammal(String name) {
