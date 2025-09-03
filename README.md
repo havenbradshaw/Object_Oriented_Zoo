@@ -1,1 +1,1 @@
-All of my AI use had to do with error correcting and help with figuring out how to implement interfaces. The only code I had CoPilot generate were examples for interfaces and how to implement said interfaces. I also incrementally had CoPilot check through my code to make sure it was formatted correctly.
+
