@@ -4,38 +4,26 @@ import animals.Animal;
 import animals.Bird;
 import animals.Mammal;
 import animals.Reptile;
-import interfaces.Flyable;
-import interfaces.Sunbathes;
-import interfaces.Walkable;
 import java.util.ArrayList;
 
+
+// Main class to demonstrate the zoo management system
 public class Main {
     public static void main(String[] args) {
         ArrayList<Animal> animals = new ArrayList<>();
 
+        // Adding different types of animals to the list
         animals.add(new Mammal("Dog"));
-        animals.add(new Bird("Conure"));
-        animals.add(new Reptile("Python"));
+        animals.add(new Bird("Conure"));    
+        animals.add(new Reptile("Snake"));
 
+        // Creating a ZooManager instance and adding animals to the zoo
+        ZooManager zooManager = new ZooManager();
         for (Animal animal : animals) {
-            System.out.println("Animal: " + animal.getName());
+            zooManager.addAnimal(animal);
+        }
 
-            animal.makeSound();
-
-            if (animal instanceof Flyable flyableAnimal) {
-            flyableAnimal.fly();
-            }   
-
-            if (animal instanceof Walkable walkableAnimal) {
-                walkableAnimal.walk();
-            }
-
-            if (animal instanceof Sunbathes sunbathingAnimal) {
-                sunbathingAnimal.sunbathe();    
-            }
-
-            System.out.println();
-
-            }
+        // Interacting with the animals in the zoo
+        zooManager.interactWithAnimal();
     }
 }

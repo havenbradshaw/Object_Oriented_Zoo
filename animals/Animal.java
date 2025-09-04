@@ -1,5 +1,6 @@
 package animals;
 
+// Base abstract class for all animals
 public abstract class Animal {
      private final String name;
 
